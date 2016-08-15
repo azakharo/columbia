@@ -11,7 +11,8 @@ import uiRouter from 'angular-ui-router';
 import uiBootstrap from 'angular-ui-bootstrap';
 // import ngMessages from 'angular-messages';
 //import ngValidationMatch from 'angular-validation-match';
-
+import 'angular-ui-grid/ui-grid.css';
+import 'angular-ui-grid/ui-grid';
 
 import {
   routeConfig
@@ -31,7 +32,7 @@ import './app.less';
 
 angular.module('columbiaApp', [
     // ngAnimate,
-    ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter, uiBootstrap,
+    ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter, uiBootstrap, 'ui.grid',
     // ngMessages,
 
     // ngValidationMatch,
