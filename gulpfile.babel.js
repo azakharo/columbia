@@ -482,6 +482,15 @@ gulp.task('build', cb => {
         cb);
 });
 
+gulp.task('clear', cb => {
+  runSequence(
+    [
+      'clean:dist',
+      'clean:tmp'
+    ],
+    cb);
+});
+
 gulp.task('clean:dist', () => del([`${paths.dist}/!(.git*|.openshift|Procfile)**`], {dot: true}));
 
 gulp.task('build:images', () => {
